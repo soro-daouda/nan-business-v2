@@ -26,7 +26,9 @@
                 </a>
                 <button class="navbar-toggler navbar-toggler-button" type="button" data-toggle="collapse" data-target="#button"
                     aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
+                    <span class="navbar-toggler-icon">
+                        <img src="ressources/images/svg/menu-bar.svg" alt="logo menu-bar" class="img-fluid"/>
+                    </span>
                 </button>
                 
                 <div class="collapse navbar-collapse bg-navbar-responsive" id="button">
@@ -54,18 +56,19 @@
                         dolor, blanditiis voluptates sit unde quos tenetur nulla. 
                         Ea esse ad nemo neque culpa.
                     </p>
-                    <button type="button" data-toggle="modal" data-target="#exampleModalCenter">consulter un espert</button>
+                    <button type="button" data-toggle="modal" data-target="#exampleModalCenter">consulter un expert</button>
                 </div>
                         
             </div>
         </div>
     </header>
 
+    <div id="main-box">
     <!-- section 1 entreprises presentation -->
     <section id="entreprise-description">
         <div class="container-fluid">
             <div class="row">
-                <div class="col-lg-6 col-md-6 col-sm-12 col-12 pl-0">
+                <div class="col-lg-6 col-md-6 col-sm-12 col-12 pl-0 entreprise-p">
                     <div class="entreprise-img">
                         <img src="ressources/images/enterpriseAppDevelopment1.png" alt="photo entreprise" class="img-fluid w-100">
                     </div>
@@ -98,7 +101,7 @@
                         
                     </div>
                 </div>
-                <div class="col-lg-6 col-md-6 col-sm-12 col-12">
+                <div class="col-lg-6 col-md-6 col-sm-12 col-12 skeleton-pl">
                     <div class="entreprise-content-description e-description">
                         <h1> </h1>
                         <p>
@@ -150,7 +153,13 @@
 
                 <div class="col-md-12">
                     <div class="solution-two">
-                        <div class="row">
+                        <div class="row solution-two-item">
+                            <div class="col-lg-3 col-md-3 col-sm-12 col-12">
+                                <div class="solution-img">
+                                    <img src="https://s3-us-west-2.amazonaws.com/spaceocanadawp/2019/06/SupplyChainManagement.png" alt="photo solution" class="img-fluid w-100">
+                                </div>
+                            </div>
+
                             <div class="col-lg-9 col-md-9 col-sm-12 col-12 my-auto">
                                 <div class="solution-content">
                                     <h2>Customer Relationship Management (CRM)</h2>
@@ -164,12 +173,6 @@
                                         enterprises to get rich analytical insights 
                                         that need to make a decision.
                                     </p>
-                                </div>
-                            </div>
-
-                            <div class="col-lg-3 col-md-3 col-sm-12 col-12">
-                                <div class="solution-img">
-                                    <img src="https://s3-us-west-2.amazonaws.com/spaceocanadawp/2019/06/SupplyChainManagement.png" alt="photo solution" class="img-fluid w-100">
                                 </div>
                             </div>
                         </div>
@@ -205,7 +208,12 @@
 
                 <div class="col-md-12">
                     <div class="solution-two">
-                        <div class="row">
+                        <div class="row solution-two-item">
+                            <div class="col-lg-3 col-md-3 col-sm-12 col-12">
+                                <div class="solution-img">
+                                    <img src="https://s3-us-west-2.amazonaws.com/spaceocanadawp/2019/06/BusinessProcessManagement.png" alt="photo solution" class="img-fluid w-100">
+                                </div>
+                            </div>
                             <div class="col-lg-9 col-md-9 col-sm-12 col-12 my-auto">
                                 <div class="solution-content">
                                     <h2>Customer Relationship Management (CRM)</h2>
@@ -219,12 +227,6 @@
                                         enterprises to get rich analytical insights 
                                         that need to make a decision.
                                     </p>
-                                </div>
-                            </div>
-
-                            <div class="col-lg-3 col-md-3 col-sm-12 col-12">
-                                <div class="solution-img">
-                                    <img src="https://s3-us-west-2.amazonaws.com/spaceocanadawp/2019/06/BusinessProcessManagement.png" alt="photo solution" class="img-fluid w-100">
                                 </div>
                             </div>
                         </div>
@@ -252,20 +254,21 @@
                     </div>
                 </div>
 
+                <!-- skeleton -->
                 <div class="col-md-12 mb-5 mt-5 skeleton-proposition">
-                    <div class="solution-one">
-                        <div class="row">
+                    <div class="solution-two">
+                        <div class="row solution-two-item">
+                            <div class="col-lg-3 col-md-3 col-sm-12 col-12">
+                                <div class="solution-img p-image">
+                                    
+                                </div>
+                            </div>
                             <div class="col-lg-9 col-md-9 col-sm-12 col-12 my-auto">
                                 <div class="solution-content p-solution">
                                     <h2> </h2>
                                     <p>
                                         
                                     </p>
-                                </div>
-                            </div>
-                            <div class="col-lg-3 col-md-3 col-sm-12 col-12">
-                                <div class="solution-img p-image">
-                                    
                                 </div>
                             </div>
                         </div>
@@ -996,7 +999,7 @@
             </div>
         </div>
     </section>
-
+    </div>
 
     <!-- FOOTER -->
     <footer>

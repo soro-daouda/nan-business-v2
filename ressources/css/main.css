@@ -78,13 +78,14 @@ button{
     background-size: cover;
     background-position: center;
     position: relative;
+    margin-bottom: 3rem;
 }
 
 #s-header-content{
     position: absolute;
-    top: 45%;
+    top: 50%;
     left: 50%;
-    transform: translate(-50%, -65%);
+    transform: translate(-50%, -50%);
     text-align: center;
     color: white;
     width: 60%;
@@ -123,7 +124,7 @@ button{
     min-height: 15rem;
 }
 
-.sectionIBox{
+/* .sectionIBox{
     box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.2);
     min-height: 18rem;
     position: absolute;
@@ -133,9 +134,9 @@ button{
     background: white;
     width: 70%;
     padding: 2rem 0;
-}
+} */
 
-.s-card-Box{
+/* .s-card-Box{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -148,9 +149,9 @@ button{
     display: flex;
     align-items: center;
     justify-content: center;
-}
+} */
 
-.s-card-Box .s-img{
+/* .s-card-Box .s-img{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -158,9 +159,9 @@ button{
     width: 100px;
     border-radius: 50%;
     box-shadow: 0 0 25px rgba(0, 0, 0, 0.08);
-}
+} */
 
-.s-card-Box .s-text-content{
+/* .s-card-Box .s-text-content{
     padding: 0 0 0 2rem;
     text-align: left!important;
     line-height: 1rem;
@@ -168,7 +169,7 @@ button{
 
 .s-card-Box .s-text-content h1{
     font-size: 4rem;
-}
+} */
 
 /* section 2 */
 
@@ -314,6 +315,10 @@ button{
     margin: 0 2rem;
 }
 
+.solution-two-item{
+    flex-direction: row-reverse!important;
+}
+
 .card-solution .card-img img{
     height: 30rem;
     width: 100%;
@@ -401,7 +406,7 @@ button{
 }
 
 .projet-carousel{
-    height: 35rem;
+    height: 40rem;
 }
 
 .projet-carousel-content h1{
@@ -650,10 +655,9 @@ button{
     height: 6rem;
 }
 
-
-.navbar-toggler-button{
+/* .navbar-toggler-button{
     background-color: #767ffe;
-}
+} */
 
 .nav li{
     display: block;
@@ -2012,15 +2016,193 @@ footer{
 
 
 
+
 /* MEDIA QUERY  *************** */
 
 @media screen and (max-width: 767px){
+
+    body h1{
+        font-size: 2.8rem!important;
+    }
+
+    body h2{
+        font-size: 2.3rem!important;
+    }
+
+    body h3{
+        font-size: 2rem!important;
+    }
+
+    body p{
+        font-size: 1.5rem;
+    }
+
     .form-box .titleForm{
         width: 85%;
         text-align: center;
         font-size: 2rem;
         padding: 1rem 3rem;
     }
+
+    /* service */
+
+    #main-box{
+        margin: 0 2rem;
+    }
+
+    .entreprise-position {
+        position: absolute;
+        top: 20%;
+        left: 10%;
+        color: white;
+    }
+
+    .box-entreprise-content p{
+        width: 90%;
+    }
+
+    .entreprise-content-description p{
+        line-height: inherit;
+    }
+
+    .entreprise-p{
+        padding: 0!important;
+        margin-bottom: 2rem;
+    }
+
+    .entreprise-content-description{
+        width: 100%;
+    }
+
+    .solution-img{
+        margin-bottom: 2rem;
+    }
+
+    .projet-carousel {
+        height: auto;
+    }
+
+    .projet-carousel-content h1 {
+        margin: 1.5rem 0rem;
+    }
+
+    .approche-title{
+        margin-bottom: 4rem;
+    }
+
+    .localisation-nan{
+        margin-top: 3rem;
+    }
+
+    .form-box{
+        height: 55rem;
+    }
+
+    .modal {
+        padding: 2rem;
+    }
+
+    /* produit */
+    button{
+        padding: .5rem 1.5rem;
+    }
+    
+    .evenement-title{
+        margin-bottom: 3rem;
+    }
+
+    .processus-info{
+        margin-bottom: 2rem;
+    }
+
+    .card-testimonila{
+        margin-bottom: 2.5rem;
+    }
+
+    .custom-accordion li a{
+        font-size: 1.7rem;
+    }
+
+    .titleForm{
+        font-size: 2rem !important;
+    }
+
+    #approches p{
+        font-size: 1.5rem;
+    }
+
+    /* skeleton */
+    .skeleton-presentation-entreprise .e-image{
+        margin-bottom: 2rem;
+    }
+
+    .skeleton-pl{
+        padding-left: 0;
+    }
+
+    .skeleton-prestation .pr-image{
+        margin-bottom: .7rem;
+    }
+
+    .d-titre,
+    .d-description,
+    .t-miniscule,
+    .t-majuscule{
+        width: 100%!important;
+    }
+
+    /* modal form */
+    .modal-open .modal {
+        margin-top: 8rem;
+        padding: .2rem;
+    }
+
+    .modal-header button{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-bottom: 2.8rem;
+    }
+
+    .modal-content .form-box{
+        margin: 0 .5rem;
+    }
+
+    .modal-content .modal-body{
+        padding: .5rem;
+    }
+
+    /* application */
+    .typo-exemple{
+        margin-bottom: 2rem;
+    }
+
+    .guide-img{
+        margin-bottom: 2rem;
+    }
+
+    .guide-color ul li {
+        margin: 1rem 1.5rem;
+    }
+
+    .t-typo{
+        margin-bottom: 1rem;
+    }
+
+    .box-header{
+        min-height: 110vh;
+    }
+
+    .application-width{
+        width: 30rem!important;
+    }
+
+    .app-box{
+        margin: 0 .5rem;
+    }
+
+    /* index */
+    
 }
 
 @media screen and (max-width: 576px){
@@ -2029,3 +2211,35 @@ footer{
     }
 }
 
+@media screen and (max-width: 375px){
+    
+    /* service */
+    .box-header-entreprise {
+        min-height: 100vh;
+    }
+
+    .entreprise-position {
+        position: absolute;
+        top: 18%;
+        left: 4%;
+        color: white;
+    }
+
+    .projet-carousel {
+        height: auto;
+    }
+
+}
+
+@media screen and (max-width:320px){
+
+    /* service */
+    .box-header-entreprise {
+        min-height: 150vh;
+    }
+
+    /* application */
+    .box-header{
+        min-height: 175vh;
+    }
+}
