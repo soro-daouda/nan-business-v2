@@ -120,57 +120,41 @@ button{
     outline: none;
 }
 
-#sectionI{
-    min-height: 15rem;
+/* section 1 header position */
+
+#header-position{
+    position: relative;
+    margin-top: -120px;
+    background: transparent!important;
+    margin-bottom: 5rem;
+    z-index: 2; 
 }
 
-/* .sectionIBox{
-    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.2);
-    min-height: 18rem;
-    position: absolute;
-    top: 80%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+.position-container{
+    padding: 1rem 3rem;
     background: white;
-    width: 70%;
-    padding: 2rem 0;
-} */
-
-/* .s-card-Box{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100%;
-    margin: 0 1.5rem;
+    min-height: 20rem;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, .1);
+    width: 65%;
+    margin: auto;
 }
 
-.s-card-Box .s-img-content{
-    padding: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-} */
-
-/* .s-card-Box .s-img{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100px;
-    width: 100px;
-    border-radius: 50%;
+.img-position{
+    height: 10rem;
+    width: 10rem;
+    border-radius: 50%; 
+    background: white;
     box-shadow: 0 0 25px rgba(0, 0, 0, 0.08);
-} */
-
-/* .s-card-Box .s-text-content{
-    padding: 0 0 0 2rem;
-    text-align: left!important;
-    line-height: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
 }
 
-.s-card-Box .s-text-content h1{
-    font-size: 4rem;
-} */
-
+.text-position h1{
+    font-size: 3rem;
+    font-weight: bold;
+}
 /* section 2 */
 
 .s-nan-info{
@@ -224,6 +208,10 @@ button{
 
 #service{
     min-height: 30rem;
+}
+
+.service-reverse{
+    flex-direction: row-reverse;
 }
 
 .service-descript{
@@ -1906,7 +1894,7 @@ ul.inner-list p {
 .skeleton-service .s-description{
     background: rgba(216, 216, 216, 0.808);
     min-height: 35rem;
-    min-width: 61rem;
+    min-width: 100%;
 }
 
 .skeleton-service .s-button{
@@ -1918,7 +1906,7 @@ ul.inner-list p {
 .skeleton-service .s-image{
     background: rgba(216, 216, 216, 0.808);
     min-height: 60rem;
-    min-width: 100rem;
+    min-width: 100%;
 }
 
 .skeleton-item .i-image{
@@ -2019,6 +2007,20 @@ footer{
 
 /* MEDIA QUERY  *************** */
 
+@media screen and (max-width: 1400px){
+    .position-container{
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 991px){
+    
+
+    .position-item{
+        margin-bottom: 5rem;
+    }
+}
+
 @media screen and (max-width: 767px){
 
     body h1{
@@ -2048,6 +2050,10 @@ footer{
 
     #main-box{
         margin: 0 2rem;
+    }
+
+    .service-descript{
+        float: left;
     }
 
     .entreprise-position {
@@ -2137,7 +2143,7 @@ footer{
     }
 
     .skeleton-pl{
-        padding-left: 0;
+        padding: 0;
     }
 
     .skeleton-prestation .pr-image{
@@ -2149,6 +2155,14 @@ footer{
     .t-miniscule,
     .t-majuscule{
         width: 100%!important;
+    }
+
+    .skeleton-service{
+        width: auto;
+    }
+
+    .skeleton-service{
+        float: left;
     }
 
     /* modal form */
@@ -2202,6 +2216,66 @@ footer{
     }
 
     /* index */
+    #s-header-content {
+        width: 98%;
+    }
+
+    #s-header-content p {
+        width: 97%;
+        margin: auto;
+        font-size: 1.8rem;
+    }
+
+    .headerIndex {
+        min-height: 95vh;
+    }
+
+    .text-position{
+        text-align: center;
+    }
+
+    .main-index-box{
+        margin: 0 2rem;
+    }
+
+    .s-nan-img{
+        margin-bottom: 2rem;
+    }
+
+    #testimonial {
+        padding: 1rem 0;
+    }
+
+    #form-contact {
+        padding: 8rem 0;
+    }
+
+    .slick-slide img{
+        width: 8rem;
+        height: 8rem;
+    }
+
+    .pl-0, 
+    .px-0{
+        padding: 0 !important;
+    }
+
+    .skeleton-approche .a-description,
+    .skeleton-approche .a-titre {
+        width: 100%!important;
+    }
+
+    .skeleton-presentation-entreprise .pl-0{
+        padding: 0 15px!important;
+    }
+
+    .service-descript {
+        width: 100%;
+    }
+
+    .s-nan-description {
+        width: 100%;
+    }
     
 }
 
@@ -2227,6 +2301,16 @@ footer{
 
     .projet-carousel {
         height: auto;
+    }
+
+    /* application */
+    .box-header{
+        min-height: 150vh;
+    }
+
+    /* index */
+    .position-container{
+        width: 97%;
     }
 
 }
