@@ -29,6 +29,7 @@
 
 /* Font ********************************************** */
 
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,700|Ubuntu:300,400,500,700&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
 
 
@@ -61,7 +62,7 @@ html{
 body{
     font-size: 1.8rem;
     box-sizing: border-box;
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Ubuntu', sans-serif;
 }
 
 button{
@@ -137,6 +138,10 @@ button{
     box-shadow: 0 3px 12px rgba(0, 0, 0, .1);
     width: 65%;
     margin: auto;
+}
+
+.my-position{
+    min-height:20rem!important;
 }
 
 .img-position{
@@ -1209,7 +1214,37 @@ button{
     margin-bottom: 1rem;
 }
 
-/* section 4 scrollbar */
+/* section 4 fonctionalité */
+#fonctionnalite h2{
+    font-size: 4rem;
+    margin-bottom: 2rem;
+}
+.title-fontionnalite h1{
+    font-size: 5rem;
+    font-weight: bold;
+    margin-bottom: 3rem;
+}
+
+.fonctionalite-two{
+    flex-direction: row-reverse;
+}
+
+.fontionnalité-img{
+    display: flex;
+}
+
+.mt-img,
+.mb-img{
+    height: 45rem;
+}
+
+.mt-img{
+    margin-top: 10rem;
+}
+
+.mb-img{
+    margin-bottom: 10rem;
+}
 
 
 
@@ -1716,13 +1751,13 @@ ul.inner-list p {
 .skeleton-description .d-titre{
     background: var(--skeleton-color);
     height: 6rem;
-    width: 80rem;
+    width: 100%;
 }
 
 .skeleton-description .d-description{
     background: var(--skeleton-color);
     height: 18rem;
-    width: 111rem;
+    width: 100%;
 }
 
 .skeleton-description button{
@@ -2014,10 +2049,8 @@ footer{
 }
 
 @media screen and (max-width: 991px){
-    
-
     .position-item{
-        margin-bottom: 5rem;
+        margin: 2.5rem 0;
     }
 }
 
@@ -2203,8 +2236,8 @@ footer{
         margin-bottom: 1rem;
     }
 
-    .box-header{
-        min-height: 110vh;
+    .box-header {
+        min-height: 90vh;
     }
 
     .application-width{
@@ -2213,6 +2246,29 @@ footer{
 
     .app-box{
         margin: 0 .5rem;
+    }
+
+    .app-img img{
+        height: 30rem;
+        margin-top: 3rem;
+    }
+
+    .fontionnalité-img{
+        display: block!important;
+        text-align: center;
+    }
+
+    .mt-img,
+    .mb-img{
+        height: 45rem;
+    }
+
+    .mt-img{
+        margin: 2rem 0;
+    }
+
+    .mb-img{
+        margin-bottom: 2rem; 
     }
 
     /* index */
@@ -2277,6 +2333,32 @@ footer{
         width: 100%;
     }
     
+    .position-item h1{
+        font-size: 1rem;
+    }
+
+    .position-item p{
+        font-size: 1.4rem;
+    }
+
+    .img-position{
+        height: 8rem;
+        width: 8rem;
+    }
+
+    .img-position img{
+        height: 4rem;
+    }
+
+    .modal-header h5 {
+        font-size: 2.2rem;
+    }
+
+    .navbar-img{
+        height: 4rem;
+        width: 4rem;
+    }
+    
 }
 
 @media screen and (max-width: 576px){
@@ -2289,7 +2371,7 @@ footer{
     
     /* service */
     .box-header-entreprise {
-        min-height: 100vh;
+        min-height: 80vh;
     }
 
     .entreprise-position {
@@ -2323,7 +2405,7 @@ footer{
     }
 
     /* application */
-    .box-header{
+    /* .box-header{
         min-height: 175vh;
-    }
+    } */
 }
