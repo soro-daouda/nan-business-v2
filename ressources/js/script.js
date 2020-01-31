@@ -107,3 +107,6 @@ $('.custom-accordion > li > a').click(function () {
 
     }
 });
+
+// paralax js
+$('.parallax-window').parallax({imageSrc: 'ressources/images/bg.jpg'});
