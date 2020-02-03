@@ -587,6 +587,52 @@ button{
 
 /* portfolio section */
 
+.portfolio-header{
+    height: 50vh;
+    position: relative;
+    z-index: 1;
+    background: linear-gradient(rgba(0, 0, 0, 0.349), rgba(0, 0, 0, 0.822));
+}
+
+.portfolio-header .portfolio-content{
+    /* background: rgba(0, 0, 0, 0.445);
+    padding: 1rem; */
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 23%;
+    transform: translate(0%, -50%);
+}
+
+.portfolio-content h1{
+    font-size: 5rem;
+}
+
+.portfolio-content h1,
+.portfolio-content p{
+    margin-bottom: 1.5rem;
+}
+
+.portfolio-content button{
+    padding: 1rem 2rem;
+    border: 1px solid transparent;
+    background: #777ffe;
+    color: white;
+    text-transform: capitalize;
+    font-weight: bold;
+    transition: all .5s;
+    outline: none;
+}
+
+.portfolio-content button:hover{
+    background: black;
+    transition: all .5s;
+}
+
+#portfolio{
+    margin-top: 4rem;
+}
+
 #portfolio p{
     font-size: 1.6rem;
 }
@@ -1962,6 +2008,11 @@ footer{
     .position-item{
         margin: 2.5rem 0;
     }
+
+    /* portfolio */
+    .portfolio-header .portfolio-content{
+        left: 15%;
+    }
 }
 
 @media screen and (max-width: 767px){
@@ -2274,6 +2325,11 @@ footer{
 @media screen and (max-width: 576px){
     .form-box{
         margin: 0 2rem;
+    }
+
+    /* portfolio */
+    .portfolio-header .portfolio-content{
+        left: 5%;
     }
 }
 
