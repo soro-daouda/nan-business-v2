@@ -72,6 +72,10 @@ footer img{
 
 /* propsosition css */
 
+.title-proposition{
+    margin-bottom: 0rem;
+}
+
 .propositon{
     display: flex;
     flex-wrap: wrap;
@@ -79,11 +83,16 @@ footer img{
 }
 
 .item-proposition{
-    width: 48%;
+    width: 30%;
 }
 
 .item-proposition img{
     width: 100%;
+    border-radius: 9px;
+}
+
+.item-proposition h3{
+    font-size: 1.3rem;
 }
 
 .item-proposition h3{
