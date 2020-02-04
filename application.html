@@ -9,6 +9,7 @@
     <!-- cdn css -->
     <link rel="stylesheet" href="ressources/css/bootstrap.min.css">
     <link rel="stylesheet" href="ressources/css/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.min.css">
     <title>NaN Business</title>
 </head>
 
@@ -406,6 +407,21 @@
                 </div>
             </div>
         </section>
+
+        <!-- section 5 custom scrollbar -->
+        <section id="custom-scrollbar">
+            <div class="scrolling-wrapper">
+                <div class="card"><h2><img src="ressources/images/bg.jpg" alt="" class="img-fluid"></h2></div>
+                <div class="card"><h2><img src="ressources/images/bg.jpg" alt="" class="img-fluid"></h2></div>
+                <div class="card"><h2><img src="ressources/images/bg.jpg" alt="" class="img-fluid"></h2></div>
+                <div class="card"><h2><img src="ressources/images/bg.jpg" alt="" class="img-fluid"></h2></div>
+                <div class="card"><h2><img src="ressources/images/bg.jpg" alt="" class="img-fluid"></h2></div>
+                <div class="card"><h2><img src="ressources/images/bg.jpg" alt="" class="img-fluid"></h2></div>
+                <div class="card"><h2><img src="ressources/images/bg.jpg" alt="" class="img-fluid"></h2></div>
+                <div class="card"><h2><img src="ressources/images/bg.jpg" alt="" class="img-fluid"></h2></div>
+                <div class="card"><h2><img src="ressources/images/bg.jpg" alt="" class="img-fluid"></h2></div>
+            </div>
+        </section>
         
         <hr>
 
@@ -521,6 +537,17 @@
     <script src="ressources/js/bootstrap.min.js"></script>
     <script src="ressources/js/script.js"></script>
     <script src="ressources/js/parallax.js"></script>
+    <script type="javascript" src="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.min.js"></script> 
+
+    <script type="text/javascript">
+        (function($){
+            $(window).load(function(){
+            $(".content").mCustomScrollbar({
+            theme:'dark'
+                });
+            });
+        })(jQuery);
+    </script>
 </body>
 
 </html>

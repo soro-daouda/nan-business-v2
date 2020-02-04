@@ -647,6 +647,19 @@ button{
     margin-bottom: 5rem;
 }
 
+.s-card-box .p-image{
+    width: 95%;
+    margin: auto;
+    margin-bottom: 1.5rem;
+    box-shadow: 0px 0px 7px 0px rgba(0,0,0,0.75);
+}
+
+.s-card-box .my-border{
+    padding: 1.5rem;
+    border: 1px solid #EEE;
+    background: #f7f7f7;
+}
+
 .s-card-box img{
     height: auto;
     width: 100%;
@@ -1928,6 +1941,39 @@ ul.inner-list p {
 }
 
 
+/* PAGE ERROR 404 */
+.box-error{
+    position: absolute;
+    left: 50%;
+    top: 30%;
+    transform: translate(-50%, -50%);
+    min-width: 30%;
+    min-height: 40vh;
+    text-align: center;
+    border: 1px solid rgba(138, 138, 138, 0.555);
+    padding: 2rem;
+}
+
+.box-error h1{
+    opacity: .7;
+    font-size: 5rem;
+    margin: 1rem 0;
+}
+
+.desole-color{
+    color: #777ffe;
+}
+
+.box-error a{
+    outline: none;
+    background: #777FFE;
+    color: white;
+    padding: 1rem 2rem;
+    border: 1px solid #777FFE;
+    text-decoration: none;
+}
+
+
 
 
 /* FOOTER ***************************************/
@@ -2322,6 +2368,13 @@ footer{
     
 }
 
+@media screen and (max-width:720px){
+    .box-error{
+        top: 45%;
+        min-width: 90%;
+    }
+}
+
 @media screen and (max-width: 576px){
     .form-box{
         margin: 0 2rem;
@@ -2374,4 +2427,28 @@ footer{
     /* .box-header{
         min-height: 175vh;
     } */
+}
+
+
+
+
+
+
+
+
+
+.scrolling-wrapper {
+    overflow-x: scroll;
+    overflow-y: hidden;
+    white-space: nowrap;
+}
+
+.card {
+    display: inline-block;
+    height: 50rem;
+    width: 30rem;
+}
+
+.card img{
+    height: 100%;
 }
